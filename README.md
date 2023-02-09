@@ -1,3 +1,3 @@
 # MobileApp for StudentInfo
 
-Simple mobile application that collects a student information with android studio.
+Simple mobile application that collects a student information with android studio using SQL database.
