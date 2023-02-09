@@ -1,0 +1,425 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myscroll"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msgBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A60909"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/studentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentId"
+            android:maxLength="11"
+            />
+
+
+        <EditText
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentName"
+            />
+
+        <EditText
+            android:id="@+id/studentSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentSurname"
+            />
+        <TextView
+            android:id="@+id/bDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#82DD18"
+            android:hint="@string/birthDate"
+            android:padding="3dp"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="Select your birth date "
+            android:textColor="#FFEB3B"/>
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectDate"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="#FF5722"
+            />
+
+
+
+        <TextView
+            android:id="@+id/bPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/birthPlace"
+            />
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="#DD0907">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/Male"
+                android:textColor="#22CFAD"
+                />
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="#ED26E4"
+                android:text="@string/Female"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:padding="25dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="faculty"
+                android:textColor="#AA4445"
+                android:background="#AA07E45F"
+                />
+
+            <TextView
+                android:id="@+id/department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#AA4445"
+                android:background="#AA07E45F"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="1.5"
+            android:textColor="#DD0907">
+
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+
+            <Spinner
+                android:id="@+id/sp3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/gpaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/GPA"
+            android:padding="3dp"
+            android:maxLength="4"
+            />
+        <TextView
+            android:id="@+id/Scholarshipp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#101AD6"
+            android:hint="@string/scholarshipp"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:textColor="#070000"/>
+        <RadioGroup
+            android:id="@+id/Scholarship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="#040000"
+            >
+            <RadioButton
+                android:id="@+id/full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/Full" />
+            <RadioButton
+                android:id="@+id/half"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/Half" />
+            <RadioButton
+                android:id="@+id/None"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/None" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/additionalInfo"
+            />
+
+        <EditText
+            android:id="@+id/addInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/additionalInfo"
+            android:padding="3dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sqlBtnSubmit"
+                android:background="#AA18C6C6"
+                android:text="@string/submit" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#AABA1629"
+                android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFEB3B"
+                android:text="@string/exit" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sqlBtnSearch"
+                android:background="#AA18C6C6"
+                android:text="@string/search" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="20dp"
+                android:onClick="sqlBtnUpdate"
+                android:background="#AA18C6C6"
+                android:text="@string/update" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sqlBtnDelete"
+                android:background="#AA18C6C6"
+                android:text="@string/delete" />
+            <Button
+                android:id="@+id/btnDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="sqlBtnDisplay"
+                android:background="#AA18C6C6"
+                android:text="@string/Display" />
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/delId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="give an id then select search, delete or update"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/updateInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="write new inforfations to update data then click update button "
+            android:textColor="#DD0907"/>
+
+        <EditText
+            android:id="@+id/rename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Name"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/resurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Surname"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/redept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Departement"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/refaculy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Faculty"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/nameSurnameInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/idInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/birthDateInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/birthPlaceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/genderInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/facultyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/departmentInf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"/>
+        <TextView
+            android:id="@+id/gpaInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"
+
+            />
+        <TextView
+            android:id="@+id/aInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD0907"
+
+            />
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+</ScrollView>

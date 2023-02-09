@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">project02</string>
+
+    <string name="studentId">Student ID:</string>
+    <string name="studentName">Name:</string>
+    <string name="studentSurname">Surname;</string>
+    <string name="nameInfo"> ;</string>
+    <string name="surnameInfo"> ;</string>
+    <string name="idInfo"> ;</string>
+    <string name="birthDate">Birth Date ;</string>
+    <string name="birthPlace">Birth Place ;</string>
+    <string name="Male"> Male</string>
+    <string name="Female"> Female </string>
+    <string name="additionalInfo"> Additional information ;</string>
+    <string name="GPA"> GPA ;</string>
+    <string name="submit">submit;</string>
+    <string name="reset">reset;</string>
+    <string name="exit">exit;</string>
+    <string name="Display">Display;</string>
+    <string name="search">search;</string>
+    <string name="update">update;</string>
+    <string name="delete">delete</string>
+    <string name="gender">choose you gender</string>
+    <string name="Half"> Half </string>
+    <string name="None"> none </string>
+    <string name="Full"> full </string>
+    <string name="scholarshipp"> Scholarship: </string>
+
+</resources>
